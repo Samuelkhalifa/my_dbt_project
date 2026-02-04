@@ -43,9 +43,9 @@ models:
   my_first_dbt_project:
 
     staging:
-      materialized: view
+      +materialized: view
       google_analytics:
-        schema: stg_google_analytics
+        +schema: stg_google_analytics
       sales_database:
         +schema: stg_sales_database
       google_sheets:
