@@ -37,8 +37,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   +persist_docs:
-      relation: true
-      columns: true
+      relation: false
+      columns: false
       
   my_first_dbt_project:
 
